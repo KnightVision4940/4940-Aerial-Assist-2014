@@ -99,10 +99,18 @@ public class RobotTemplate extends SimpleRobot {
             //Timer.delay(0.25);
        //     TalonUp.set(0.0);
        //     TalonDown.set(0.0);
+            
+            //Drives foward, turns right, continues forward, spins around, then stops [TEST]
             chassis.drive(0.0, 0.0);
             Timer.delay(0.5);
-            chassis.drive(-0.2, 0.0);
+            chassis.drive(1.0, 0.0);
             Timer.delay(3.0);
+            chassis.drive(1.0, 0.56);
+            Timer.delay(0.75);
+            chassis.drive(1.0, 0.0);
+            Timer.delay(5.0);
+            chassis.drive(1.0, 1.0);
+            Time.delay(2.0)
             chassis.drive(0.0, 0.0);
             runauto=false;
             
